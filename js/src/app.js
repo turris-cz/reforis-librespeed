@@ -7,6 +7,7 @@
 
 import React from "react";
 
+import History from "./History/History";
 import LibreSpeedIcon from "./LibreSpeedIcon";
 import Settings from "./Settings/Settings";
 import SpeedTest from "./SpeedTest/SpeedTest";
@@ -22,8 +23,13 @@ const LibreSpeedPlugin = {
             component: SpeedTest,
         },
         {
+            path: "/history",
+            name: _("History"),
+            component: History,
+        },
+        {
             path: "/settings",
-            name: _("Autostart Settings"),
+            name: _("Settings"),
             component: Settings,
         },
     ],

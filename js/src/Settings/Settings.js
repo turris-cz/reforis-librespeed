@@ -5,12 +5,13 @@
  * See /LICENSE for more information.
  */
 
-import React from "react";
+import React, { useCallback, useState } from "react";
 
 import { ForisForm } from "foris";
 import PropTypes from "prop-types";
 
-import AutostartForm from "./AutostartForm";
+import { prepData, prepDataToSubmit, validator } from "./settingsData";
+import SettingsForm from "./SettingsForm";
 import API_URLs from "../API";
 import LibreSpeed from "../LibreSpeed";
 
@@ -19,27 +20,30 @@ Settings.propTypes = {
 };
 
 export default function Settings({ ws }) {
+    // Counts saves. ForisForm wants a callback that keeps its identity.
+    const [saves, setSaves] = useState(0);
+    const onSaved = useCallback(() => setSaves((n) => n + 1), []);
     return (
         <LibreSpeed>
+            <p className="text-muted">
+                {_(
+                    "More settings, such as the server or the protocol, are in LuCI under Network → LibreSpeed."
+                )}
+            </p>
             <ForisForm
                 ws={ws}
                 forisConfig={{
-                    endpoint: API_URLs.settings,
+                    endpoint: API_URLs.config,
                     wsModule: "librespeed",
+                    wsAction: "update_config",
                 }}
+                prepData={prepData}
                 prepDataToSubmit={prepDataToSubmit}
                 validator={validator}
+                postCallback={onSaved}
             >
-                <AutostartForm />
+                <SettingsForm saves={saves} />
             </ForisForm>
         </LibreSpeed>
     );
-}
-
-function prepDataToSubmit(data) {
-    return data;
-}
-
-function validator() {
-    return undefined;
 }

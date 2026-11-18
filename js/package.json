@@ -6,7 +6,7 @@
         "url": "https://gitlab.nic.cz/turris/reforis/reforis-librespeed.git"
     },
     "license": "GPL-3.0",
-    "version": "1.4.1",
+    "version": "2.0.0",
     "description": "reForis LibreSpeed plugin provides a frontend to measure Internet speed, latency, and other details to the selected LibreSpeed server",
     "main": "./src/app.js",
     "eslintConfig": {

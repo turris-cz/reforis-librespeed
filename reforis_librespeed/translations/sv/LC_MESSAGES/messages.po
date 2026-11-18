@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: reForis LibreSpeed 0.1.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
-"POT-Creation-Date: 2026-10-15 20:29+0300\n"
+"POT-Creation-Date: 2026-11-17 12:46+0000\n"
 "PO-Revision-Date: 2026-09-04 14:07+0000\n"
 "Last-Translator: Kristoffer Grundström "
 "<swedishsailfishosuser@tutanota.com>\n"
@@ -29,87 +29,539 @@ msgstr ""
 "LibreSpeed mäter dina internet-parametrar så som uppladdning, hämtning "
 "och svarstid."
 
-#: js/src/app.js:15
+#: js/src/app.js:16
 msgid "LibreSpeed"
 msgstr "LibreSpeed"
 
-#: js/src/SpeedTest/SpeedTest.js:33 js/src/app.js:21
+#: js/src/SpeedTest/SpeedTest.js:177 js/src/app.js:22
 msgid "Speed Test"
 msgstr "Hastighetstest"
 
-#: js/src/Settings/AutostartForm.js:30 js/src/app.js:26
-msgid "Autostart Settings"
-msgstr "Inställningar för automatiskt start"
-
-#: js/src/Settings/AutostartForm.js:32
-msgid ""
-"Here you can enable Autostart. The measurement will occur once daily, and"
-" the time is picked randomly during the night hours."
+#: js/src/History/History.js:135 js/src/Settings/SettingsForm.js:209
+#: js/src/app.js:27
+msgid "History"
 msgstr ""
-"Här kan du aktivera Autostart. Mätningen kommer att inträffa en gång per "
-"dag, och tiden väljs slumpmässigt ut under nattens timmar."
 
-#: js/src/Settings/AutostartForm.js:37
-msgid "Enable Autostart"
-msgstr "Aktivera automatisk start"
+#: js/src/app.js:32
+msgid "Settings"
+msgstr ""
 
-#: js/src/SpeedTest/Results.js:60
-msgid "Results"
-msgstr "Resultat"
+#: js/src/SpeedTest/LastResult.js:111 js/src/utils.js:10
+msgid "Ping"
+msgstr ""
 
-#: js/src/SpeedTest/Results.js:71
-msgid "Refresh"
-msgstr "Uppdatera"
+#: js/src/SpeedTest/LastResult.js:101 js/src/utils.js:11
+msgid "Download"
+msgstr ""
 
-#: js/src/SpeedTest/ResultsTable.js:33
-msgid "Server"
-msgstr "Server"
+#: js/src/SpeedTest/LastResult.js:106 js/src/utils.js:12
+msgid "Upload"
+msgstr ""
 
-#: js/src/SpeedTest/ResultsTable.js:37
+#: js/src/utils.js:31
+msgid "Every 15 minutes"
+msgstr ""
+
+#: js/src/utils.js:32
+msgid "Every 30 minutes"
+msgstr ""
+
+#: js/src/utils.js:33
+msgid "Hourly"
+msgstr ""
+
+#: js/src/utils.js:34
+msgid "Every 6 hours"
+msgstr ""
+
+#: js/src/utils.js:35
+msgid "Every 12 hours"
+msgstr ""
+
+#: js/src/utils.js:36
+msgid "Daily"
+msgstr ""
+
+#: js/src/utils.js:37
+msgid "Weekly"
+msgstr ""
+
+#: js/src/utils.js:42
+msgid "Mon"
+msgstr ""
+
+#: js/src/utils.js:43
+msgid "Tue"
+msgstr ""
+
+#: js/src/utils.js:44
+msgid "Wed"
+msgstr ""
+
+#: js/src/utils.js:45
+msgid "Thu"
+msgstr ""
+
+#: js/src/utils.js:46
+msgid "Fri"
+msgstr ""
+
+#: js/src/utils.js:47
+msgid "Sat"
+msgstr ""
+
+#: js/src/utils.js:48
+msgid "Sun"
+msgstr ""
+
+#: js/src/utils.js:52
+msgid "24 hours"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:27 js/src/utils.js:53
+msgid "7 days"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:28 js/src/utils.js:54
+msgid "30 days"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:30 js/src/utils.js:55
+msgid "1 year"
+msgstr ""
+
+#: js/src/utils.js:61
+msgid "Another measurement is running. Wait for it to finish."
+msgstr ""
+
+#: js/src/utils.js:64
+msgid "The LibreSpeed measurement backend is not installed."
+msgstr ""
+
+#: js/src/utils.js:67
+msgid "This interface does not exist."
+msgstr ""
+
+#: js/src/utils.js:68 js/src/utils.js:89
+msgid "This interface is disabled or not configured."
+msgstr ""
+
+#: js/src/utils.js:71 js/src/utils.js:92
+msgid "This interface is down."
+msgstr ""
+
+#: js/src/utils.js:72 js/src/utils.js:86
+msgid "The router could not tell which interfaces are up. Try again later."
+msgstr ""
+
+#: js/src/utils.js:75
+msgid "The measurement backend did not answer."
+msgstr ""
+
+#: js/src/utils.js:78
+msgid "The measurement could not be started."
+msgstr ""
+
+#: js/src/utils.js:93
+msgid "The LibreSpeed client is not installed."
+msgstr ""
+
+#: js/src/utils.js:96
+msgid "The LibreSpeed client failed without saying why."
+msgstr ""
+
+#: js/src/utils.js:99
+msgid "The LibreSpeed client gave no output."
+msgstr ""
+
+#: js/src/utils.js:102
+msgid "The LibreSpeed client gave output that could not be read."
+msgstr ""
+
+#: js/src/utils.js:105
+msgid "The LibreSpeed client reported no result."
+msgstr ""
+
+#: js/src/utils.js:106
+msgid "Skipped: another measurement was still running after 3 minutes of waiting."
+msgstr ""
+
+#: js/src/utils.js:116
+#, python-format
+msgid "The LibreSpeed client failed with exit code %(code)s."
+msgstr ""
+
+#: js/src/History/History.js:48
+msgid "No measurements in this range."
+msgstr ""
+
+#: js/src/History/History.js:59
+msgid "Day"
+msgstr ""
+
+#: js/src/History/History.js:59
 msgid "Date and time"
 msgstr "Datum och tid"
 
-#: js/src/SpeedTest/ResultsTable.js:47
+#: js/src/History/History.js:65
 msgid "Download [Mb/s]"
 msgstr "Hämtning [Mb/s]"
 
-#: js/src/SpeedTest/ResultsTable.js:51
+#: js/src/History/History.js:70
 msgid "Upload [Mb/s]"
 msgstr "Uppladdning [Mb/s]"
 
-#: js/src/SpeedTest/ResultsTable.js:55
-msgid "Jitter [ms]"
-msgstr "Jitter [ms]"
-
-#: js/src/SpeedTest/ResultsTable.js:59
+#: js/src/History/History.js:73
 msgid "Ping [ms]"
 msgstr "Ping [ms]"
 
-#: js/src/SpeedTest/ResultsTable.js:78
-msgid ""
-"No tests have been performed lately. Try to start a new test or re-"
-"download data."
-msgstr ""
-"Inga tester har utförts nyligen. Prova att starta ett nytt test eller "
-"hämta datan igen."
+#: js/src/History/History.js:74
+msgid "Jitter [ms]"
+msgstr "Jitter [ms]"
 
-#: js/src/SpeedTest/SpeedTestButton.js:28
+#: js/src/History/History.js:75 js/src/History/History.js:166
+#: js/src/Settings/ScheduleFields.js:82 js/src/SpeedTest/SpeedTest.js:188
+msgid "Interface"
+msgstr ""
+
+#: js/src/History/History.js:77
+msgid "Measurements"
+msgstr ""
+
+#: js/src/History/History.js:78
+msgid "Server"
+msgstr "Server"
+
+#: js/src/History/History.js:127
+msgid "All interfaces"
+msgstr ""
+
+#: js/src/History/History.js:140
+msgid "Range"
+msgstr ""
+
+#: js/src/History/History.js:178
+msgid ""
+"This range reaches past the kept measurements, so it shows daily averages"
+" from the archive. Today is not in it yet."
+msgstr ""
+
+#: js/src/History/History.js:186
+#, python-format
+msgid "Average: %(download)s Mb/s down, %(upload)s Mb/s up, %(ping)s ms ping."
+msgstr ""
+
+#: js/src/Settings/AppliedSchedules.js:45
+msgid "Upcoming measurements"
+msgstr ""
+
+#: js/src/Settings/AppliedSchedules.js:57
+msgid "No measurement is scheduled."
+msgstr ""
+
+#: js/src/Settings/AppliedSchedules.js:61
+msgid ""
+"The list updates within a few seconds after saving. A daily measurement "
+"gets a new random time whenever the settings change. A weekly one keeps "
+"its day and time while they still match the settings."
+msgstr ""
+
+#: js/src/Settings/DailyArchive.js:42
+msgid ""
+"Each finished day is reduced to its averages and kept on the external "
+"drive, so it outlasts restarts and the raw history."
+msgstr ""
+
+#: js/src/Settings/DailyArchive.js:46
+#, python-format
+msgid "Daily averages are kept in %(path)s."
+msgstr ""
+
+#: js/src/Settings/DailyArchive.js:54
+msgid "Keep daily averages"
+msgstr ""
+
+#: js/src/Settings/DailyArchive.js:69
+msgid "To keep daily averages across restarts, set up an external drive in the"
+msgstr ""
+
+#: js/src/Settings/DailyArchive.js:72
+msgid "Storage plugin"
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:52 js/src/SpeedTest/SpeedTest.js:37
+msgid "Choose an interface"
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:74
+msgid "Enabled"
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:93
+msgid "Interval"
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:137
+msgid "Days"
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:156
+msgid ""
+"A weekly measurement runs on one of the chosen days, or on any day if "
+"none is chosen."
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:159
+msgid "None chosen means every day."
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:163
+msgid "At any time of day"
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:170
+msgid ""
+"A daily or weekly measurement runs at a random time within these hours, "
+"chosen when the settings are saved. More frequent measurements run only "
+"within them."
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:178
+msgid "From"
+msgstr ""
+
+#: js/src/Settings/ScheduleFields.js:190
+msgid "Until"
+msgstr ""
+
+#: js/src/Settings/Settings.js:29
+msgid ""
+"More settings, such as the server or the protocol, are in LuCI under "
+"Network → LibreSpeed."
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:29
+msgid "90 days"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:35
+#, python-format
+msgid "%(days)s days"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:36
+msgid "As set in LuCI"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:86
+msgid "Measurement"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:88 js/src/Settings/SettingsForm.js:132
+msgid "Default interface"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:92
+msgid ""
+"The speed test measures this interface unless you choose another one, and"
+" so does the schedule for the default interface."
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:104
+msgid "Scheduled measurements"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:106
+msgid ""
+"A measurement uses the full capacity of its connection while it runs, so "
+"each connection can have only one enabled schedule. IPv4 and IPv6 on the "
+"same device count as one connection."
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:113
+#, python-format
+msgid ""
+"Two enabled schedules measure the same connection (%(connections)s). The "
+"router will not save this."
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:121
+msgid "Schedule for the default interface"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:148
+msgid "Set up a schedule for the default interface"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:157
+#, python-format
+msgid "Schedule %(number)s"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:168
+msgid "Remove"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:199
+msgid "Add a schedule for another interface"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:211
+msgid "Keep the history of results"
+msgstr ""
+
+#: js/src/Settings/SettingsForm.js:219
+msgid "Keep results for"
+msgstr ""
+
+#: js/src/Settings/settingsData.js:87
+msgid "Choose the interface this schedule measures."
+msgstr ""
+
+#: js/src/Settings/settingsData.js:90
+msgid "This interval cannot be scheduled. Choose one from the list."
+msgstr ""
+
+#: js/src/Settings/settingsData.js:95
+msgid "The time window must not cross midnight."
+msgstr ""
+
+#: js/src/Settings/settingsData.js:103
+msgid "Choose an interface."
+msgstr ""
+
+#: js/src/SpeedTest/Failures.js:30
+msgid "Failed measurements"
+msgstr ""
+
+#: js/src/SpeedTest/Failures.js:32
+msgid ""
+"Each interface's last failure, including scheduled measurements, until a "
+"measurement of it succeeds."
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:45
+msgid "The last measurement was stopped."
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:53
+#, python-format
+msgid "The last measurement of %(interface)s failed: %(error)s"
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:62
+#, python-format
+msgid "The last measurement failed: %(error)s"
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:76
+msgid "No measurement has been finished yet."
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:84
+msgid "encrypted (HTTPS)"
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:85
+msgid "unencrypted (HTTP)"
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:98
+msgid "Last result"
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:116
+msgid "Jitter"
+msgstr ""
+
+#: js/src/SpeedTest/LastResult.js:131
+msgid "Share"
+msgstr ""
+
+#: js/src/SpeedTest/Progress.js:32
+msgid "Connecting"
+msgstr ""
+
+#: js/src/SpeedTest/Progress.js:40
+msgid "Stages"
+msgstr ""
+
+#: js/src/SpeedTest/Progress.js:62
+msgid "Measurement progress"
+msgstr ""
+
+#: js/src/SpeedTest/Progress.js:87
+#, python-format
+msgid "%(interface)s: %(stage)s…"
+msgstr ""
+
+#: js/src/SpeedTest/Progress.js:96
+#, python-format
+msgid "%(time)s elapsed"
+msgstr ""
+
+#: js/src/SpeedTest/SpeedTest.js:41
+#, python-format
+msgid "%(interface)s (default)"
+msgstr ""
+
+#: js/src/SpeedTest/SpeedTest.js:46
+#, python-format
+msgid "%(interface)s – down"
+msgstr ""
+
+#: js/src/SpeedTest/SpeedTest.js:180
+msgid ""
+"The measurement backend does not answer, so the status shown may be out "
+"of date."
+msgstr ""
+
+#: js/src/SpeedTest/SpeedTest.js:195
+msgid "This interface is down, so it cannot be measured now."
+msgstr ""
+
+#: js/src/SpeedTest/SpeedTest.js:198
+msgid ""
+"The connection to measure. A measurement uses its full capacity while it "
+"runs."
+msgstr ""
+
+#: js/src/SpeedTest/SpeedTest.js:211
 msgid "Start"
 msgstr "Starta"
 
-#: js/src/SpeedTest/SpeedTestProgress.js:31
-msgid "Measuring…"
-msgstr "Mäter…"
+#: js/src/SpeedTest/SpeedTest.js:219
+msgid "Stop"
+msgstr ""
 
-#: js/src/SpeedTest/hooks.js:47
-msgid "Speed test finished successfully."
-msgstr "Hastighetstestet avslutades framgångsrikt."
+#: reforis_librespeed/__init__.py:52 reforis_librespeed/__init__.py:119
+msgid "Invalid JSON"
+msgstr ""
 
-#: js/src/SpeedTest/hooks.js:51
-msgid "Speed test failed."
-msgstr "Hastighetstestet misslyckades."
+#: reforis_librespeed/__init__.py:71
+msgid "The interface must be a name."
+msgstr ""
 
-#: reforis_librespeed/__init__.py:49
+#: reforis_librespeed/__init__.py:95
+#, python-format
+msgid "Invalid value of %(key)s."
+msgstr ""
+
+#: reforis_librespeed/__init__.py:106
+msgid "Two enabled schedules would measure the same connection."
+msgstr ""
+
+#: reforis_librespeed/__init__.py:107
+msgid "A time window must not end before it starts."
+msgstr ""
+
+#: reforis_librespeed/__init__.py:109
+msgid ""
+"The router could not tell which interfaces share a connection. Try again "
+"later, or enable only one schedule."
+msgstr ""
+
+#: reforis_librespeed/__init__.py:124 reforis_librespeed/__init__.py:126
 msgid "Cannot update LibreSpeed settings."
 msgstr "Kan inte uppdatera inställningarna för LibreSpeed."
 
@@ -124,4 +576,45 @@ msgstr "Kan inte uppdatera inställningarna för LibreSpeed."
 
 #~ msgid "Date and Time"
 #~ msgstr ""
+
+#~ msgid "Autostart Settings"
+#~ msgstr "Inställningar för automatiskt start"
+
+#~ msgid ""
+#~ "Here you can enable Autostart. The "
+#~ "measurement will occur once daily, and"
+#~ " the time is picked randomly during"
+#~ " the night hours."
+#~ msgstr ""
+#~ "Här kan du aktivera Autostart. Mätningen"
+#~ " kommer att inträffa en gång per "
+#~ "dag, och tiden väljs slumpmässigt ut "
+#~ "under nattens timmar."
+
+#~ msgid "Enable Autostart"
+#~ msgstr "Aktivera automatisk start"
+
+#~ msgid "Results"
+#~ msgstr "Resultat"
+
+#~ msgid "Refresh"
+#~ msgstr "Uppdatera"
+
+#~ msgid ""
+#~ "No tests have been performed lately. "
+#~ "Try to start a new test or "
+#~ "re-download data."
+#~ msgstr ""
+#~ "Inga tester har utförts nyligen. Prova"
+#~ " att starta ett nytt test eller "
+#~ "hämta datan igen."
+
+#~ msgid "Measuring…"
+#~ msgstr "Mäter…"
+
+#~ msgid "Speed test finished successfully."
+#~ msgstr "Hastighetstestet avslutades framgångsrikt."
+
+#~ msgid "Speed test failed."
+#~ msgstr "Hastighetstestet misslyckades."
 

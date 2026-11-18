@@ -8,6 +8,27 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-11-16
+
+### Added
+
+- Measure any interface, with the progress of each stage
+- Edit the measurement schedule, per interface as well
+- Show the history of measurements, also those from schedules and LuCI
+- Keep daily averages on the external drive set up in the Storage plugin
+
+### Changed
+
+- Require foris-controller-librespeed-module 2.0, which measures through
+  librespeed-common
+- Start the history afresh. Results measured by 1.x, kept in /tmp by default,
+  are not carried over
+- Update translation messages
+
+### Removed
+
+- Remove the 1.x autostart form and results table
+
 ## [1.4.1] - 2026-10-26
 
 ### Added
@@ -117,7 +138,8 @@ and this project adheres to
 
 - Initial implementation
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-librespeed/-/compare/v1.4.1...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-librespeed/-/compare/v2.0.0...master
+[2.0.0]: https://gitlab.nic.cz/turris/reforis/reforis-librespeed/-/compare/v1.4.1...v2.0.0
 [1.4.1]: https://gitlab.nic.cz/turris/reforis/reforis-librespeed/-/compare/v1.4.0...v1.4.1
 [1.4.0]: https://gitlab.nic.cz/turris/reforis/reforis-librespeed/-/compare/v1.3.0...v1.4.0
 [1.3.0]: https://gitlab.nic.cz/turris/reforis/reforis-librespeed/-/compare/v1.2.0...v1.3.0

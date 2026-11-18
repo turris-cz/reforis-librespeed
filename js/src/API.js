@@ -9,11 +9,17 @@ import { REFORIS_URL_PREFIX } from "foris";
 
 const API_URL_PREFIX = `${REFORIS_URL_PREFIX}/librespeed/api`;
 
+/* One endpoint per action of the foris-controller librespeed module. */
 const API_URLs = new Proxy(
     {
-        settings: "/settings",
-        data: "/data",
-        measure: "/measure",
+        status: "/status",
+        start: "/start",
+        stop: "/stop",
+        result: "/result",
+        history: "/history",
+        config: "/config",
+        links: "/links",
+        storage: "/storage",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,

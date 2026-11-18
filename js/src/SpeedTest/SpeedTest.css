@@ -1,0 +1,37 @@
+.librespeed-button {
+    min-width: 8rem;
+}
+
+/* Beside the interface select, level with the select itself rather than with
+ * its label or help text: down by the label's height, on top of the gutter
+ * every column of the row gets. */
+@media (min-width: 576px) {
+    .row > .librespeed-actions {
+        margin-top: calc(var(--bs-gutter-y, 0) + 2rem);
+    }
+}
+
+.librespeed-steps {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.75rem;
+}
+
+.librespeed-step {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+    border-bottom: 3px solid var(--bs-border-color, #dee2e6);
+    color: var(--bs-secondary-color, #6c757d);
+}
+
+.librespeed-step-done {
+    border-bottom-color: var(--bs-success, #198754);
+}
+
+.librespeed-step-active {
+    border-bottom-color: var(--bs-primary, #0d6efd);
+    color: inherit;
+    font-weight: 600;
+}

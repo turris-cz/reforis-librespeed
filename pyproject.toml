@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "reforis-librespeed"
-version = "1.4.1"
+version = "2.0.0"
 description = "reForis LibreSpeed plugin provides a frontend to measure Internet speed, latency, and other details to the selected LibreSpeed server"
 readme = "README.md"
 license = "GPL-3.0-or-later"
